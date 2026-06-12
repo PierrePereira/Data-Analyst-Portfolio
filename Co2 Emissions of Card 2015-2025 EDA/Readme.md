@@ -81,7 +81,7 @@ The highest-emitting vehicle models were performance-oriented sports cars and la
 
 ![Midgrade fuel has the highest emission by year](Visuals/Midgrade_fuel_has_the_highest_emission_by_year.png)
 
-Among the fuel types available in the dataset, Midgrade Gasoline vehicles showed the highest average CO2 emissions across the analysed time frame. They also show higher emissions when comparing identical vehicle models running different fuel types. 
+Among the fuel types available in the dataset, Midgrade Gasoline vehicles showed the highest average CO2 emissions across the analysed time frame(2015-2025). They also show higher emissions when comparing identical vehicle models running different fuel types. 
 
 CO2 emissions from diesel have gradually increased over the analysed timeframe (2015-2025), going from the lowest in 2015 to the 2nd highest in 2025.
 
