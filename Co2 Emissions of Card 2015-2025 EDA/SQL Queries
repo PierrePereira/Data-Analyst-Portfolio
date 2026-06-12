@@ -43,7 +43,7 @@ LIMIT 50;
 --- How do CO2 emissions differ across fuel types?
 SELECT 
 Fuel_Type, 
-COUNt(*) AS Total_Model,
+COUNT(*) AS Total_Model,
 ROUND(AVG(CO2_Emissions_g_per_mile))  As Avg_Emissions,
 	MIN(CO2_Emissions_g_per_mile) As Min_Emissions,
 	Max(CO2_Emissions_g_per_mile) As Max_Emissions,
@@ -79,7 +79,7 @@ ROUND(AVG(CO2_Emissions_g_per_mile))  As Avg_Emissions,
 	MIN(CO2_Emissions_g_per_mile) As Min_Emissions,
 	Max(CO2_Emissions_g_per_mile) As Max_Emissions,
     Round(STDDEV(CO2_Emissions_g_per_mile), 2) AS Emission_SD,
-Count(*) AS Total_Vehicles
+COUNT(*) AS Total_Vehicles
 FROM Cars_carbon
 WHERE Vehicle_Category LIKE '%ICE%'AND
  Year <= 2025

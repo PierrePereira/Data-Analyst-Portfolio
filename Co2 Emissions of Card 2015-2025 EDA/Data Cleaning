@@ -11,7 +11,7 @@ CREATE TABLE cars_carbon (
     Highway_MPG INT,
     Combined_MPG INT,
     CO2_Emissions_g_per_mile INT,
-    EV_Range_miles INT
+    EV_Range_miles INT,
     vehicle_category TEXT
 );
 
