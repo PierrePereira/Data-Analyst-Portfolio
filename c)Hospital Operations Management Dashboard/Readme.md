@@ -1,5 +1,5 @@
 # Hospital Operations Management
-
+[View Dashboard on Tableau Public]((https://public.tableau.com/shared/MR3NR439C?:display_count=n&:origin=viz_share_link))
 ## Project Overview
 
 This project uses Tableau to explore hospital operational data and how performance varies across hospital services and reporting periods. The analysis focuses on available beds, patient requests, admitted patients, admission rate, refusal rate, patient satisfaction, and staff morale. The purpose of this dashboard is to provide an interactive overview of hospital operations and identify areas that could support further investigation.
