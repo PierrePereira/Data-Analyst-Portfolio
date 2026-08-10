@@ -1,5 +1,7 @@
 # Mining Process Performance Analysis
 
+[Download Mining Process Performance Dashboard](https://1drv.ms/x/c/674974c0444caa43/IQA7P0_S9tnjSJ1XlPptasyeAdwT47BPMdo3fmRWQgozk0c?e=NvWWOK)
+
 ## Project Overview
 
 This project uses **Excel, Power Query, Power Pivot, and DAX** to analyse operational data from an iron ore flotation plant. The analysis examines the relationship between feed characteristics, reagent usage, pulp conditions, and flotation-column operating variables and their association with **Iron Concentrate % and Silica Concentrate %**. The purpose of this analysis is to identify key patterns in flotation performance and generate insights that could support further investigation into improving concentrate quality.
