@@ -1,4 +1,4 @@
-# Hospital Operations Dashboard
+# Hospital Operations Management
 
 ## Project Overview
 
