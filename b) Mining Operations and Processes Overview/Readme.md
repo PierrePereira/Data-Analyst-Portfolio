@@ -1,6 +1,6 @@
 # Mining Process Performance Analysis
 
-[Download Mining Process Performance Dashboard](https://github.com/PierrePereira/Data-AnalystPortfolio/raw/refs/heads/master/b%20Mining%20Operations%20and%20Processes%20Overview/Excel%20Dashboard%20Mining%20Operations%20and%20Processes%20Overview%20.xlsx])
+[Download Mining Process Performance Dashboard](https://github.com/PierrePereira/Data-Analyst-Portfolio/raw/refs/heads/master/b%20Mining%20Operations%20and%20Processes%20Overview/Excel%20Dashboard%20Mining%20Operations%20and%20Processes%20Overview%20.xlsx)
 
 ## Project Overview
 
