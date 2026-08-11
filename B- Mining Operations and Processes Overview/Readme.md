@@ -96,3 +96,4 @@ Conduct statistical analysis to determine the strength of the relationships betw
 Develop predictive models to estimate Iron Concentrate % and Silica Concentrate % using feed characteristics, reagent flows, pulp conditions, and flotation-column measurements.
 
 Investigate if specific operating ranges for the seven flotation columns are consistently associated with improved concentrate quality and whether these relationships change under different feed conditions.
+ 
