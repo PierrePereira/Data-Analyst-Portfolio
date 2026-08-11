@@ -4,9 +4,9 @@
 
 +91 8652165656, pjsp-1996@live.com
 
-LinkedIn: Pierre Pereira
+[LinkedIn: Pierre Pereira](https://www.linkedin.com/in/pierre-pereira-38974929b/)
 
-Pierre Pereira Portfolio
+[Pierre Pereira Portfolio](https://github.com/PierrePereira/Data-Analyst-Portfolio)
 
 Mumbai, India 400050
 
