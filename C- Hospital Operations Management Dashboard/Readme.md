@@ -93,4 +93,4 @@ Analyse average patient length of stay using Arrival Date and Departure Date to 
 
 Investigate whether operational events such as strikes and surgeries are associated with changes in admissions, refusals, patient satisfaction, or staff morale.
 
-Analyse patient satisfaction and staff morale over a longer reporting period and compare performance across multiple years to identify seasonal and longer-term trends.
+Analyse patient satisfaction and staff morale over a longer reporting period and compare performance across multiple years to identify seasonal and longer-term trends. 
