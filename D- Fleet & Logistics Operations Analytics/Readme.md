@@ -113,4 +113,4 @@ Analyse customer revenue potential and account activity to identify customers wi
 
 Develop predictive models to estimate route profitability using revenue, fuel cost, route characteristics, and customer information.
 
-Investigate vehicle maintenance costs by brand, vehicle age, and maintenance status to identify fleet replacement or maintenance optimisation opportunities.
+Investigate vehicle maintenance costs by brand, vehicle age, and maintenance status to identify fleet replacement or maintenance optimisation opportunities. 
