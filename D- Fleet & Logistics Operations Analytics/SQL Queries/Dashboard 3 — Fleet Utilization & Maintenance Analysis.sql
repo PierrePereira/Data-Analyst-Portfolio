@@ -23,15 +23,14 @@ FROM customers;
 CREATE OR REPLACE VIEW vw_fleet_performance AS
 
 WITH truck_revenue AS (
-
     SELECT
         t.truck_id,
         COUNT(t.trip_id) AS total_trips,
 
         SUM(
-            l.revenue +
-            l.fuel_surcharge +
-            l.accessorial_charges
+            COALESCE(l.revenue, 0)
+            + COALESCE(l.fuel_surcharge, 0)
+            + COALESCE(l.accessorial_charges, 0)
         ) AS total_revenue
 
     FROM trips t
@@ -43,7 +42,6 @@ WITH truck_revenue AS (
 ),
 
 truck_fuel AS (
-
     SELECT
         truck_id,
         SUM(total_cost) AS fuel_cost,
@@ -51,11 +49,9 @@ truck_fuel AS (
 
     FROM fuel_purchases
 
-    GROUP BY truck_id
-),
+    GROUP BY truck_id),
 
-truck_maintenance AS (
-
+ truck_maintenance AS (
     SELECT
         truck_id,
         SUM(total_cost) AS maintenance_cost
@@ -66,23 +62,22 @@ truck_maintenance AS (
 )
 
 SELECT
-
     tr.truck_id,
     tr.make,
     tr.model_year,
 
-    COALESCE(r.total_trips,0) AS total_trips,
-    COALESCE(r.total_revenue,0) AS total_revenue,
+    COALESCE(r.total_trips, 0) AS total_trips,
+    COALESCE(r.total_revenue, 0) AS total_revenue,
 
-    COALESCE(f.fuel_cost,0) AS fuel_cost,
-    COALESCE(f.total_gallons,0) AS total_gallons,
+    COALESCE(f.fuel_cost, 0) AS fuel_cost,
+    COALESCE(f.total_gallons, 0) AS total_gallons,
 
-    COALESCE(m.maintenance_cost,0) AS maintenance_cost,
+    COALESCE(m.maintenance_cost, 0) AS maintenance_cost,
 
-    COALESCE(r.total_revenue,0)
-    - COALESCE(f.fuel_cost,0)
-    - COALESCE(m.maintenance_cost,0)
-    AS estimated_profit
+    COALESCE(r.total_revenue, 0)
+        - COALESCE(f.fuel_cost, 0)
+        - COALESCE(m.maintenance_cost, 0)
+        AS estimated_profit
 
 FROM trucks tr
 
@@ -101,7 +96,7 @@ SELECT *
   --Validate the view 
     SELECT *
 FROM vw_fleet_performance
-Where model_year = 2021
+WHERE model_year = 2021
 LIMIT 20;
 
 --KPIS
@@ -123,11 +118,8 @@ FROM vw_fleet_performance;
 
 --Average Fuel Cost Per Trip
 SELECT
-    ROUND(
-        SUM(fuel_cost) /
-        NULLIF(SUM(total_trips),0),
-        2
-    ) AS fuel_cost_per_trip
+    SUM(fuel_cost) /
+    NULLIF(SUM(total_trips), 0) AS fuel_cost_per_trip
 FROM vw_fleet_performance;
 --Charts
 --Top Revenue Trucks
