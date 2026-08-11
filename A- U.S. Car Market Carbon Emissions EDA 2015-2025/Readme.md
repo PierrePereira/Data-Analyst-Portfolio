@@ -123,4 +123,4 @@ This analysis shows:
 
 - Conduct a more detailed analysis of how fuel type and fuel economy interact to influence CO₂ emissions.
 
-- Compare Fuel economy across ICE, hybrid, and electric vehicles.
+- Compare Fuel economy across ICE, hybrid, and electric vehicles. 
