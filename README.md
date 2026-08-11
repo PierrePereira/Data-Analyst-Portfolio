@@ -320,4 +320,4 @@ Development of existing skills and towards new skills is on going in:
 - Data storytelling
 - Business-focused analysis
 
-This portfolio will continue to be updated as new projects and analytical techniques are developed.
+This portfolio will continue to be updated as new projects and analytical techniques are developed. 
